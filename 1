@@ -3,9 +3,221 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>电商平台</title>
+  <meta name="theme-color" content="#1f6feb">
+  <title>电商老板自助购物平台</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --primary: #1f6feb;
+      --primary-dark: #134fb5;
+      --text: #0f172a;
+      --muted: #475569;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #35a2ff);
+      color: #fff;
+      padding: 56px 24px 72px;
+    }
+
+    header h1 {
+      margin: 0 0 16px;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      margin: 0 0 28px;
+      max-width: 640px;
+      font-size: 1.1rem;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: #fff;
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
+    }
+
+    main {
+      padding: 0 24px 64px;
+      max-width: 1100px;
+      margin: -48px auto 0;
+      display: grid;
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 860px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.4rem;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      margin-right: 8px;
+      margin-bottom: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(31, 111, 235, 0.1);
+      color: var(--primary-dark);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 24px 60px;
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到电商平台</h1>
+  <header>
+    <h1>电商老板自助购物平台 PWA</h1>
+    <p>
+      以 PWA 形式交付的轻量化电商运营套件，让老板随时随地完成建店、选品、进货与营销活动配置，
+      覆盖门店日常运营、供应链管理与客户复购的完整流程。
+    </p>
+    <a class="cta" href="#modules">查看核心模块</a>
+  </header>
+
+  <main>
+    <section class="card" id="modules">
+      <h2>核心软件模块</h2>
+      <div class="grid">
+        <div>
+          <span class="tag">店铺搭建</span>
+          <ul>
+            <li>多端自适应店铺模板，30 分钟完成装修</li>
+            <li>商品分类、SKU、价格梯度一键导入</li>
+            <li>自动生成分享海报与店铺二维码</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tag">供应链管理</span>
+          <ul>
+            <li>一件代发、直供、预售等多种供货方式</li>
+            <li>实时库存预警与智能补货建议</li>
+            <li>采购对账、结算与发票管理</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tag">会员增长</span>
+          <ul>
+            <li>会员等级、积分、储值与优惠券体系</li>
+            <li>私域社群任务与复购提醒</li>
+            <li>营销活动模板（秒杀、拼团、预售）</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>资质与执照支持</h2>
+      <ul>
+        <li>开店必备：营业执照、对公账户、品牌授权资料清单</li>
+        <li>合规保障：商品资质审核、价格合规提醒、税务开票指引</li>
+        <li>区域规则：各平台类目准入及本地配送资质说明</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>平台玩法与增长策略</h2>
+      <div class="grid">
+        <div>
+          <span class="tag">引流玩法</span>
+          <ul>
+            <li>爆品测款与引流款定价策略</li>
+            <li>短视频/直播带货脚本与排期管理</li>
+            <li>同城配送与到店自提组合玩法</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tag">转化玩法</span>
+          <ul>
+            <li>首单礼包与新人券自动触达</li>
+            <li>多件多折与加价购组合策略</li>
+            <li>智能客服话术与成交提醒</li>
+          </ul>
+        </div>
+        <div>
+          <span class="tag">复购玩法</span>
+          <ul>
+            <li>会员生日礼、回购券、沉睡唤醒计划</li>
+            <li>团购团长激励与分销体系</li>
+            <li>运营日报+周报，自动生成行动建议</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>PWA 特性</h2>
+      <ul>
+        <li>离线可用：关键页面可脱网浏览，保障营业不中断</li>
+        <li>安装到桌面：老板手机/平板一键安装，随时查看经营数据</li>
+        <li>即时更新：新活动模板与政策提示自动同步</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    提示：本页面为 PWA 演示模板，可根据企业品牌与业务流程进行深度定制。
+  </footer>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("/sw.js");
+      });
+    }
+  </script>
 </body>
 </html>

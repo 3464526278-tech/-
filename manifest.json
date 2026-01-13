@@ -1,0 +1,18 @@
+{
+  "name": "电商老板自助购物平台",
+  "short_name": "电商平台",
+  "description": "面向电商老板的自助购物与运营管理平台。",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1f6feb",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
