@@ -1,5 +1,5 @@
 const CACHE_NAME = "infra-platform-pwa-v2";
-const PRECACHE_ASSETS = ["./", "./1", "./manifest.json", "./icon.svg"];
+const PRECACHE_ASSETS = ["./1", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(
