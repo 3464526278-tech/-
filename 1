@@ -3,9 +3,251 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>电商平台</title>
+  <meta name="theme-color" content="#0f172a">
+  <title>电商基础设施服务平台</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --primary: #1e3a8a;
+      --primary-strong: #172554;
+      --text: #0f172a;
+      --muted: #475569;
+      --border: #e2e8f0;
+      --accent: #2563eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    header {
+      background: var(--primary-strong);
+      color: #fff;
+      padding: 72px 0 96px;
+    }
+
+    header .subtitle {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+
+    .hero-actions {
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 22px;
+      border-radius: 10px;
+      border: 1px solid transparent;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #fff;
+      color: var(--primary-strong);
+    }
+
+    .section {
+      padding: 56px 0;
+    }
+
+    .section h2 {
+      margin: 0 0 20px;
+      font-size: 1.6rem;
+    }
+
+    .grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    @media (min-width: 860px) {
+      .grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .card {
+      background: var(--surface);
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      padding: 20px;
+      box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 12px;
+      font-size: 1.1rem;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .action-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .btn-outline {
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: transparent;
+    }
+
+    footer {
+      padding: 32px 0 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
 </head>
 <body>
-  <h1>欢迎来到电商平台</h1>
+  <header>
+    <div class="container">
+      <h1>为电商商家提供资质、软件与平台通道的一站式服务</h1>
+      <div class="subtitle">支持拼多多、小红书、抖音与私域电商</div>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#services">查看可用服务</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="issues">
+      <div class="container">
+        <h2>商家常见问题</h2>
+        <div class="grid grid-4">
+          <div class="card">开不了店（没执照、没类目）</div>
+          <div class="card">用不了品牌（没商标、易侵权）</div>
+          <div class="card">出不了单（没工具、没效率）</div>
+          <div class="card">容易被封（没风控）</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2>三大服务模块</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>商家资质</h3>
+            <ul>
+              <li>个体户执照</li>
+              <li>公司执照</li>
+              <li>商标注册</li>
+              <li>商标授权</li>
+              <li>平台类目报白</li>
+            </ul>
+            <div class="action-panel">
+              <button class="btn btn-outline" type="button">申请资质</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>运营软件</h3>
+            <ul>
+              <li>自动上架</li>
+              <li>自动客服</li>
+              <li>选品工具</li>
+              <li>订单管理</li>
+            </ul>
+            <div class="action-panel">
+              <button class="btn btn-outline" type="button">开通软件</button>
+            </div>
+          </div>
+          <div class="card">
+            <h3>平台通道</h3>
+            <ul>
+              <li>拼多多店铺接入</li>
+              <li>小红书店铺接入</li>
+              <li>抖音电商接入</li>
+              <li>私域商城</li>
+            </ul>
+            <div class="action-panel">
+              <button class="btn btn-outline" type="button">接入平台</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="value">
+      <div class="container">
+        <h2>为什么选择我们</h2>
+        <div class="grid grid-4">
+          <div class="card">电商专用资质</div>
+          <div class="card">可直接对接平台</div>
+          <div class="card">软件与资质打通</div>
+          <div class="card">有运营与风控支持</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cta">
+      <div class="container">
+        <div class="card">
+          <h2>选择你需要的服务，我们将在 24 小时内与你对接</h2>
+          <p class="muted">提交需求后，我们将根据商家类目与平台要求安排对接。</p>
+          <button class="btn btn-primary" type="button">立即开始</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    电商基础设施服务平台 · 为 B 端商家提供可落地的资质与工具支持
+  </footer>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js");
+      });
+    }
+  </script>
 </body>
 </html>

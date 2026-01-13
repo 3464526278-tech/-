@@ -1,0 +1,19 @@
+{
+  "name": "电商基础设施服务平台",
+  "short_name": "电商服务",
+  "description": "为电商商家提供资质、软件与平台通道的一站式服务平台。",
+  "lang": "zh-CN",
+  "start_url": "./1",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7fb",
+  "theme_color": "#0f172a",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
