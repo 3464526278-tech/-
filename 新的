@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>商家基础设施服务平台</title>
+<style>
+body{
+    margin:0;
+    font-family: "PingFang SC","Microsoft YaHei",sans-serif;
+    background:#f6f8fb;
+    color:#1f2937;
+}
+.header{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:#fff;
+    padding:60px 20px;
+}
+.container{
+    max-width:1100px;
+    margin:0 auto;
+}
+h1{font-size:40px;margin-bottom:20px;}
+.subtitle{font-size:18px;opacity:.9;}
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    background:#fff;
+    color:#1e40af;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.section{
+    padding:60px 20px;
+}
+.card{
+    background:#fff;
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+.grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+h2{margin-bottom:20px;}
+.tag{
+    display:inline-block;
+    padding:6px 14px;
+    background:#e0ecff;
+    color:#1e40af;
+    border-radius:20px;
+    font-size:14px;
+    margin-bottom:10px;
+}
+.footer{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="container">
+    <h1>电商商家基础设施服务平台</h1>
+    <div class="subtitle">
+      专为电商老板打造的一站式：执照、商标、软件与经营系统
+    </div>
+    <a class="btn" href="#services">查看核心服务</a>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+
+    <div class="card">
+      <h2>我们是做什么的？</h2>
+      <p>
+        这是一个专门为电商商家提供<strong>“开店管道 + 经营系统 + 增长玩法”</strong>的平台。  
+        你只需要进来选你需要的资源，其它全部由系统和服务团队帮你完成。
+      </p>
+    </div>
+
+    <div class="card" id="services">
+      <h2>核心基础设施（最赚钱的部分）</h2>
+      <div class="grid">
+
+        <div>
+          <div class="tag">商标授权</div>
+          <p>食品、日用百货、服装、滋补品等可直接使用的类目商标</p>
+        </div>
+
+        <div>
+          <div class="tag">营业执照</div>
+          <p>个体户、有限公司、电商专用执照，一站式代办</p>
+        </div>
+
+        <div>
+          <div class="tag">对公账户</div>
+          <p>用于平台入驻、结算、收款的企业账户解决方案</p>
+        </div>
+
+        <div>
+          <div class="tag">开店软件</div>
+          <p>拼多多、小红书、抖音店铺管理系统 + 订单 + 发货 + 售后</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>商家经营系统</h2>
+      <div class="grid">
+
+        <div>
+          <div class="tag">选品系统</div>
+          <p>爆款数据、平台趋势、智能选品推荐</p>
+        </div>
+
+        <div>
+          <div class="tag">供应链</div>
+          <p>一件代发、预售、直供仓发货</p>
+        </div>
+
+        <div>
+          <div class="tag">会员系统</div>
+          <p>积分、复购、私域沉淀</p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>平台玩法入口（后端赚钱）</h2>
+      <div class="grid">
+
+        <div>
+          <div class="tag">拉新</div>
+          <p>短视频、直播、裂变分享</p>
+        </div>
+
+        <div>
+          <div class="tag">转化</div>
+          <p>新客礼包、自动跟单、成交机器人</p>
+        </div>
+
+        <div>
+          <div class="tag">复购</div>
+          <p>会员日、复购券、沉睡唤醒</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  电商商家基础设施平台 © 2026
+</div>
+
+</body>
+</html>
