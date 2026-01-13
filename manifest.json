@@ -1,12 +1,12 @@
 {
-  "name": "电商老板自助购物平台",
-  "short_name": "电商平台",
-  "description": "面向电商老板的自助购物与运营管理平台。",
+  "name": "电商基础设施服务平台",
+  "short_name": "电商服务",
+  "description": "为电商商家提供资质、软件与平台通道的一站式基础设施服务平台。",
   "lang": "zh-CN",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#f8fafc",
-  "theme_color": "#1f6feb",
+  "theme_color": "#0f172a",
   "icons": [
     {
       "src": "icon.svg",
