@@ -1,4 +1,5 @@
 const CACHE_NAME = "infra-platform-pwa-v2";
+// Avoid precaching "/" so installs won't fail on hosts where the root 404s.
 const PRECACHE_ASSETS = ["./1", "./manifest.json", "./icon.svg"];
 
 self.addEventListener("install", (event) => {
